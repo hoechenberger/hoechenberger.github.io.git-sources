@@ -1,25 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './App.css'
+import { MDBContainer } from "mdb-react-ui-kit";
 
-function App() {
+import avatar from './assets/avatar.jpg'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+    <MDBContainer className="my-5 d-flex flex-column justify-content-center align-items-center text-center">
+      <img
+        src={avatar}
+        className="rounded-circle mb-3"
+        style={{ width: "225px" }}
+        alt="Avatar"
+      />
+
+      <h2>Richard Höchenberger</h2>
+      <h5>
+       <div>
+          <span className="badge rounded-pill badge-light text-muted">Data Science</span>
+          <span className="badge rounded-pill badge-light text-muted">Open Source</span>
+          <span className="badge rounded-pill badge-light text-muted">Project Management</span>
+        </div>
+      </h5>
+
+      <div className="pt-2">
+        <p className="fs-5">
+          Hi! I'm Richard, a data scientist, software engineer, and project manager with a Ph.D. in experimental psychology.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+        <p className="fs-5">
+          I love sharing code and helping people succeed.
+        </p>
+        <p className="fs-5">
+          Please find my up-to-date profile and portfolio on LinkedIn.
+        </p>
+      </div>
+
+      <div>
+        <a className="btn btn-primary fs-6 m-3 btn-block" href="https://www.linkedin.com/in/hoechenberger/" role="button">
+          <i className="fab fa-linkedin me-2"></i>LinkedIn Profile
         </a>
-      </header>
-    </div>
+        <a className="btn btn-primary fs-6 m-3 btn-block" href="https://github.com/hoechenberger" role="button">
+          <i className="fab fa-github me-2"></i>GitHub Profile
+        </a>
+
+        <a className="btn btn-primary fs-6 m-3 btn-block" href="https://scholar.google.com/citations?user=CJg7pA4AAAAJ&hl=en" role="button">
+          <i className="fab fa-google me-2"></i>Google Scholar
+        </a>
+      </div>
+    </MDBContainer>
   );
 }
 

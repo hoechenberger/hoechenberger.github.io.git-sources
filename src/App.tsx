@@ -36,15 +36,19 @@ const App = () => {
       </div>
 
       <div>
-        <a className="btn btn-primary fs-6 m-3 btn-block" href="https://www.linkedin.com/in/hoechenberger/" role="button">
+        <a className="btn btn-secondary fs-6 m-3 btn-block" href="https://www.linkedin.com/in/hoechenberger/" role="button">
           <i className="fab fa-linkedin me-2"></i>LinkedIn Profile
         </a>
-        <a className="btn btn-primary fs-6 m-3 btn-block" href="https://github.com/hoechenberger" role="button">
+        <a className="btn btn-secondary fs-6 m-3 btn-block" href="https://github.com/hoechenberger" role="button">
           <i className="fab fa-github me-2"></i>GitHub Profile
         </a>
 
-        <a className="btn btn-primary fs-6 m-3 btn-block" href="https://scholar.google.com/citations?user=CJg7pA4AAAAJ&hl=en" role="button">
+        <a className="btn btn-secondary fs-6 m-3 btn-block" href="https://scholar.google.com/citations?user=CJg7pA4AAAAJ&hl=en" role="button">
           <i className="fab fa-google me-2"></i>Google Scholar
+        </a>
+
+        <a className="btn btn-secondary fs-6 m-3 mt-5 btn-block" href="mailto:richard@hoechenberger.net" role="button">
+          <i className="fa fa-envelope me-2"></i>Send me an email
         </a>
       </div>
     </MDBContainer>

@@ -1,6 +1,6 @@
 import React from "react";
 import './App.css'
-import { MDBContainer } from "mdb-react-ui-kit";
+import { MDBContainer, MDBBtn } from "mdb-react-ui-kit";
 
 import avatar from './assets/avatar.jpg'
 
@@ -23,7 +23,7 @@ const App = () => {
         </div>
       </h5>
 
-      <div className="pt-2">
+      <div className="mt-3">
         <p className="fs-5">
           Hi! I'm Richard, a data scientist, software engineer, and project manager with a Ph.D. in experimental psychology.
         </p>
@@ -35,21 +35,22 @@ const App = () => {
         </p>
       </div>
 
-      <div>
-        <a className="btn btn-secondary fs-6 m-3 btn-block" href="https://www.linkedin.com/in/hoechenberger/" role="button">
+      <div className="d-grid gap-3">
+        <MDBBtn className="fs-6 mt-3" color='secondary' tag='a' href='https://www.linkedin.com/in/hoechenberger/'>
           <i className="fab fa-linkedin me-2"></i>LinkedIn Profile
-        </a>
-        <a className="btn btn-secondary fs-6 m-3 btn-block" href="https://github.com/hoechenberger" role="button">
+        </MDBBtn>
+
+        <MDBBtn className="fs-6" color='secondary' tag='a' href="https://github.com/hoechenberger">
           <i className="fab fa-github me-2"></i>GitHub Profile
-        </a>
+        </MDBBtn>
 
-        <a className="btn btn-secondary fs-6 m-3 btn-block" href="https://scholar.google.com/citations?user=CJg7pA4AAAAJ&hl=en" role="button">
+        <MDBBtn className="fs-6" color='secondary' tag='a' href="https://scholar.google.com/citations?user=CJg7pA4AAAAJ&hl=en">
           <i className="fab fa-google me-2"></i>Google Scholar
-        </a>
+        </MDBBtn>
 
-        <a className="btn btn-secondary fs-6 m-3 mt-5 btn-block" href="mailto:richard@hoechenberger.net" role="button">
+        <MDBBtn className="fs-6 mt-4" color='secondary' tag='a' href="mailto:richard@hoechenberger.net">
           <i className="fa fa-envelope me-2"></i>Send me an email
-        </a>
+        </MDBBtn>
       </div>
     </MDBContainer>
   );
